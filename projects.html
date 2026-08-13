@@ -11,9 +11,148 @@
     <h1>Мои проекты</h1>
 </header>
 
-<section style="padding: 40px;">
-    <p>Здесь будут мои проекты (стримы, сайты, идеи).</p>
-</section>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты — NYRON</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header class="header">
+    <div class="nickname">NYRON</div>
+
+    <h1 class="about-title">Мои проекты</h1>
+
+    <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="work.html">Чем занимаюсь</a>
+        <a href="projects.html">Проекты</a>
+    </nav>
+</header>
+
+
+<main class="projects-page">
+
+    <h2 class="projects-heading">MY PROJECTS</h2>
+    <p class="projects-subtitle">
+        Мои работы, видео, фотографии и проекты
+    </p>
+
+
+    <div class="projects-slider">
+
+        <button class="project-prev">&#10094;</button>
+
+        <div class="projects-track">
+
+            <div class="project-card" data-type="image" data-src="media/project1.jpg">
+                <img src="media/project1.jpg" alt="Проект 1">
+                <div class="project-info">
+                    <h3>Проект 1</h3>
+                    <p>Фото</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-type="image" data-src="media/project2.jpg">
+                <img src="media/project2.jpg" alt="Проект 2">
+                <div class="project-info">
+                    <h3>Проект 2</h3>
+                    <p>Фото</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-type="video" data-src="media/project3.mp4">
+                <video src="media/project3.mp4" muted></video>
+                <div class="project-info">
+                    <h3>Проект 3</h3>
+                    <p>Видео</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-type="image" data-src="media/project4.jpg">
+                <img src="media/project4.jpg" alt="Проект 4">
+                <div class="project-info">
+                    <h3>Проект 4</h3>
+                    <p>Фото</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-type="video" data-src="media/project5.mp4">
+                <video src="media/project5.mp4" muted></video>
+                <div class="project-info">
+                    <h3>Проект 5</h3>
+                    <p>Видео</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-type="image" data-src="media/project6.jpg">
+                <img src="media/project6.jpg" alt="Проект 6">
+                <div class="project-info">
+                    <h3>Проект 6</h3>
+                    <p>Фото</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-type="image" data-src="media/project7.jpg">
+                <img src="media/project7.jpg" alt="Проект 7">
+                <div class="project-info">
+                    <h3>Проект 7</h3>
+                    <p>Фото</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-type="video" data-src="media/project8.mp4">
+                <video src="media/project8.mp4" muted></video>
+                <div class="project-info">
+                    <h3>Проект 8</h3>
+                    <p>Видео</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-type="image" data-src="media/project9.jpg">
+                <img src="media/project9.jpg" alt="Проект 9">
+                <div class="project-info">
+                    <h3>Проект 9</h3>
+                    <p>Фото</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-type="video" data-src="media/project10.mp4">
+                <video src="media/project10.mp4" muted></video>
+                <div class="project-info">
+                    <h3>Проект 10</h3>
+                    <p>Видео</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="project-next">&#10095;</button>
+
+    </div>
+
+</main>
+
+
+<!-- БОЛЬШОЕ ОКНО -->
+
+<div class="project-modal" id="projectModal">
+
+    <button class="modal-close">&times;</button>
+
+    <div class="modal-content" id="modalContent"></div>
+
+</div>
+
+
+<script src="projects.js"></script>
+
+</body>
+</html>
 </body>
 </html>
